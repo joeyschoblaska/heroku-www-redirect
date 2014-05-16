@@ -1,3 +1,7 @@
+I forked this repo and made it do the opposite: requests to www.yourdomain.com/whatever will HTTP 301 to yourdomain.com/whatever.
+
+----------
+
 __TL;DR:__ If you make `www.example.com` the canonical domain for your site then you should serve redirects when someone hits the naked `example.com` domain. If `www` is canonical then bookmarks and searches will always find the correct URL so ideally you'll only need to serve redirects when people type the naked address manually. As such this app should be able to handle the redirects for dozens of domains for all but the biggest sites, saving you the trouble of coding up the redirects on a per-app basis.
 
 ### What
